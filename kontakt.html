@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Printify3D – Kontakt</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  
+</script>
+
+  <header>
+  <h1>Printify3D</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html" style="color: #ffffff;">Strona Główna</a></li>
+      <li><a href="aktualnosci.html" style="color: #ffffff;">Aktualności</a></li>
+      <li><a href="projekty.html" style="color: #ffffff;">Projekty</a></li>
+      <li><a href="oferty.html" style="color: #ffffff;">Oferty</a></li>
+      <li><a href="kontakt.html" style="color: #ffffff;">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <section class="about">
+    <h2>Skontaktuj się z nami</h2>
+    <p>Masz pytania? Napisz do nas!</p>
+  </section>
+  
+<form onsubmit="sendMail(event)" class="contact-form">
+  <input type="text" name="name" placeholder="Twoje imię" required>
+  <input type="email" name="email" placeholder="Twój e-mail" required>
+  <textarea name="message" placeholder="Wiadomość..." required></textarea>
+  <button type="submit">Wyślij</button>
+</form>
+
+  <footer>
+    <p>© 2025 Prinify3D | Wszystkie prawa zastrzeżone</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function() {
+    // Wklej swój PUBLIC KEY z EmailJS
+    emailjs.init("YTCz6wFVfpcK5N-6O");
+  })();
+
+  function sendMail(e) {
+    e.preventDefault();
+
+    // Wklej swój SERVICE ID i TEMPLATE ID z EmailJS
+    emailjs.send("service_vpax3v5", "template_cqf70bj", {
+      name: document.querySelector('input[name="name"]').value,
+      email: document.querySelector('input[name="email"]').value,
+      message: document.querySelector('textarea[name="message"]').value
+    })
+    .then(function() {
+      alert("✅ Wiadomość wysłana! Sprawdź swoją skrzynkę Gmail.");
+      document.querySelector("form").reset();
+    }, function(error) {
+      alert("❌ Błąd wysyłania: " + JSON.stringify(error));
+    });
+  }
+</script>
+
+</body>
+</html>

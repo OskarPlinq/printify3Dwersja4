@@ -1,0 +1,220 @@
+/* ====== RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ====== OGÓLNE ====== */
+body {
+  background-color: #0a0a0a;
+  color: #f2f2f2;
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+/* ====== NAGŁÓWEK ====== */
+header {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  border-bottom: 1px solid #111;
+}
+
+header h1 {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* ====== MENU ====== */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #00d9ff;
+}
+
+/* ====== HERO / STRONA GŁÓWNA ====== */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(180deg, #0a0a0a, #111);
+}
+
+.hero h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+.hero a {
+  text-decoration: none;
+  color: #000;
+  background-color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.hero a:hover {
+  background-color: #13ec92;
+  transform: scale(1.05);
+}
+
+/* ====== SEKCJA O NAS ====== */
+.about {
+  max-width: 800px;
+  margin: 60px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.about h3 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.about p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* ====== KONTAKT / FORMULARZ ====== */
+.contact-section {
+  background-color: #111;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact-section h2 {
+  color: #1781fa;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.contact-section p {
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #f2f2f2;
+  color: #000;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background-color: #ffffff;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+.contact-form button {
+  background: linear-gradient(90deg, #ffffff, #cccccc);
+  color: #000;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.4s ease;
+}
+
+.contact-form button:hover {
+  background: linear-gradient(90deg, #cccccc, #ffffff);
+  transform: scale(1.05);
+}
+
+/* ====== USTAWIENIE STRUKTURY STRONY ====== */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ====== GŁÓWNA TREŚĆ ====== */
+main {
+  flex: 1; /* wypycha stopkę na dół */
+}
+
+/* ====== STOPKA ====== */
+footer {
+  background-color: #000;
+  color: #999;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  margin-top: auto; /* utrzymuje stopkę na dole */
+}
+         /* usuwa margines */
+
+/* ====== STRONA AKTUALNOŚCI ====== */
+.about {
+  max-width: 800px;
+  margin: 0 auto;       /* wyśrodkowanie */
+  text-align: center;
+  padding: 40px 20px 0; /* mały odstęp od góry */
+}
+
+.about h2 {
+  margin-top: 30px;     /* bardzo blisko góry */
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.about p {
+  margin-top: 50px;     /* mały odstęp pod nagłówkiem */
+  color: #ccc;
+  line-height: 1.6;
+}
+ul {
+  list-style: none; /* usuwa kropki */
+  padding: 0;
+  margin: 0;
+}
+
+
+
